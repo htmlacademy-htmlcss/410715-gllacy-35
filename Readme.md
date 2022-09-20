@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Никита Урбанович](https://up.htmlacademy.ru/htmlcss/35/user/410715).
-* Наставник: `Неизвестно`.
+- Студент: [Никита Урбанович](https://up.htmlacademy.ru/htmlcss/35/user/410715).
+- Наставник: [Александр Румянцев](https://htmlacademy.ru/profile/id1521451).
 
 ---
 
