@@ -116,9 +116,10 @@ body {
 .other-item-blog {
   height: 224px;
   width: 570px;
-  background: url("../images/background/background-blog.jpg");
-  background-size: 100%;
+  background: url(../images/background/background-blog.jpg);
+  background-size: 115%;
   border-radius: 16px;
+  background-position: center;
 }
 
 .blog-title {
@@ -166,12 +167,14 @@ body {
 }
 
 .delivery {
-  background: url("../images/background/background-delivery.jpg");
-  background-size: 100%;
+  background: url(../images/background/background-delivery.jpg);
+  background-size: 105%;
   padding: 64px;
   border-radius: 16px;
   height: 534px;
+  background-position: bottom;
 }
+
 
 .delivery-title {
   font-weight: 900;
@@ -199,6 +202,7 @@ body {
   background-size: 100%;
   border-radius: 16px;
   height: 492px;
+  background-position: left;
 }
 
 .info-block {
