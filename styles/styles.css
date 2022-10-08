@@ -1,7 +1,311 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
 body {
   background-color: #FEAFC3;
+  color: #2D3440;
+  font-family: "Inter" , sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 98px;
+}
+
+.galery-info-header {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.galery-info-descriptions {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gift-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.gift-card-item {
+  background: #FF7799;
+  border-radius: 16px;
+  height: 280px;
+  width: 570px;
+}
+
+.card-raspberry {
+  background: url("../images/raspbery.png") no-repeat;
+  background-color: #FF7799;
+  background-position: right;
+  background-size: 40%;
+}
+
+.card-marshmallow {
+  background: url("../images/marshmallow.png") no-repeat;
+  background-color: #FF7799;
+  background-position: right;
+  background-size: 40%;
+}
+
+.gift-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-card-description {
+  font-weight: 400;
+}
+
+.offer-cards-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.offer-item {
+  text-align: center;
+  background: #FCFCFC;
+  border-radius: 8px;
+  height: 281px;
+  width: 270px;
+}
+
+.offer-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.offer-description {
+  font-weight: 400;
+}
+
+.block-about {
+  background: url("../images/background/background-wafer.jpg") #FFE4B5;
+  background-color: #FFE4B5;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.about {
+  background: #FFFFFF;
+  text-align: center;
+}
+.about-list {
+  margin: 0;
+}
+
+.about-title {
+  margin: 0;
+}
+
+.about-description {
+  font-weight: 400;
+}
+
+.other-item-blog {
+  height: 224px;
+  width: 570px;
+  background: url(../images/background/background-blog.jpg);
+  background-color:  #FCFCFC;
+  background-size: 115%;
+  border-radius: 16px;
+  background-position: center;
+}
+
+.blog-title {
+  color: #565C66;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.blog-description-link {
+  text-decoration: none;
+  color: #2D3440;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.other-item-description {
+  width: 570px;
+  background: url("../images/background/background-mail.jpg");
+  background-color: #1E90FF;
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.description-block {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 26px;
+}
+
+.subscription-description {
+  margin: 0;
+  font-weight: 400;
+}
+
+.subscription-form {
+  margin: 44px 0 0;
+}
+
+.visually-hidden {
+  display: none
 }
 
 .offer-img {
   border-radius: 50%;
+}
+
+.delivery {
+  background: url(../images/background/background-delivery.jpg);
+  background-color: #FCFCFC;
+  background-size: 105%;
+  padding: 64px;
+  border-radius: 16px;
+  height: 534px;
+  background-position: bottom;
+}
+
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-description {
+  color: #565C66;
+}
+
+.delivery-form {
+  background: #FCFCFC;
+  border-radius: 8px;
+  width: 500px;
+  height: 406px;
+}
+
+.delivery-form-description {
+  font-weight: 400;
+}
+
+.info {
+  background: url("../images/background/background-info.jpg") no-repeat;
+  background-color: #FCFCFC;
+  background-size: 100%;
+  border-radius: 16px;
+  height: 492px;
+  background-position: left;
+}
+
+.info-block {
+  height: 364px;
+  width: 343px;
+  background-color: #FCFCFC;
+  align-items: center;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.info-description {
+  color: #565C66;
+  font-weight: 400;
+}
+
+.info-addres {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.info-description-number {
+  color: #565C66;
+  font-weight: 400;
+}
+
+.info-number {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.info-description-time {
+  line-height: 20px;
+  color: #565C66;
+  font-weight: 400;
+}
+
+.footer-menu-item-link {
+  text-decoration: none;
+  color: #2D3440;
+  line-height: 20px;
+}
+
+.copyright-description {
+  size: 12px;
+  line-height: 16px;
+}
+
+.catalog-navigation-item-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  font-weight: 700;
+}
+
+.navigation-catalog-item-link {
+  text-decoration: none;
+  color: #2D3440;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ice-cream-list-item {
+  background: #FCFCFC;
+  height: 281px;
+  width: 270px;
+  border-radius: 8px;
+}
+
+.offer-title {
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.offer-description {
+  color: #565C66;
+  font-weight: 400;
+}
+
+.offer-price {
+  font-weight: 700;
+  line-height: 24px;
 }
