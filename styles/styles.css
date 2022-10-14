@@ -35,17 +35,17 @@ body {
 
 /* Ограничение контейнера по ширине и его выравнивание по центру */
 
-.main-index {
+.container {
   width: 1170px;
   margin: 0 auto;
 }
+
 
 /* Шапка сайта */
 
 .main-header {
   display: flex;
   justify-content: space-between;
-  width: 1170px;
   margin: 0 auto;
 }
 
@@ -119,6 +119,7 @@ body {
 }
 
 .offer-list {
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -356,7 +357,6 @@ body {
 /* Блок списка с мороженым в каталоге */
 
 .offer-cards {
-  width: 1170px;
   margin: 0 auto;
   text-align: center;
 }
