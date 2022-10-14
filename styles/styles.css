@@ -29,8 +29,27 @@ body {
   font-family: "Inter" , sans-serif;
   font-size: 16px;
   line-height: 22px;
-  padding: 0 98px;
+  margin: 0;
+  padding: 0;
 }
+
+/* Ограничение контейнера по ширине и его выравнивание по центру */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+/* Шапка сайта */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* Блок с слайдерами */
 
 .galery-info-header {
   font-size: 36px;
@@ -44,7 +63,15 @@ body {
   line-height: 24px;
 }
 
+/* Второй блок с подарками */
+
+.gift-card-block {
+  display: flex;
+  justify-content: space-between;
+}
+
 .gift-title {
+  text-align: center;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
@@ -53,7 +80,7 @@ body {
 .gift-card-item {
   background: #FF7799;
   border-radius: 16px;
-  height: 280px;
+  height: 268px;
   width: 570px;
 }
 
@@ -62,6 +89,7 @@ body {
   background-color: #FF7799;
   background-position: right;
   background-size: 40%;
+  margin: 0 30px 0 0;
 }
 
 .card-marshmallow {
@@ -81,10 +109,19 @@ body {
   font-weight: 400;
 }
 
+/* Третий блок с предложениями */
+
 .offer-cards-title {
+  text-align: center;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+}
+
+.offer-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .offer-item {
@@ -105,16 +142,21 @@ body {
   font-weight: 400;
 }
 
+/* Четвертый блок о компании */
+
 .block-about {
+  display: flex;
   background: url("../images/background/background-wafer.jpg") #FFE4B5;
   background-color: #FFE4B5;
-  padding: 24px;
   border-radius: 16px;
+  height: 480px;
 }
 
 .about {
   background: #FFFFFF;
   text-align: center;
+  border-radius: 16px;
+  margin: 24px;
 }
 .about-list {
   margin: 0;
@@ -126,6 +168,17 @@ body {
 
 .about-description {
   font-weight: 400;
+}
+
+/* Блок с новостным блогом*/
+
+.other {
+  display:flex;
+  justify-content: space-between;
+}
+
+.other-list {
+  padding: 0;
 }
 
 .other-item-blog {
@@ -153,17 +206,18 @@ body {
 }
 
 .other-item-description {
+  display: flex;
+  height: 224px;
   width: 570px;
   background: url("../images/background/background-mail.jpg");
   background-color: #1E90FF;
   border-radius: 16px;
-  padding: 6px;
 }
 
 .description-block {
+  margin: 6px;
   background: #FFFFFF;
   border-radius: 16px;
-  padding: 26px;
 }
 
 .subscription-description {
@@ -183,13 +237,16 @@ body {
   border-radius: 50%;
 }
 
+/* Блок доставки */
+
 .delivery {
+  display: flex;
+  justify-content: space-between;
   background: url(../images/background/background-delivery.jpg);
   background-color: #FCFCFC;
   background-size: 105%;
   padding: 64px;
   border-radius: 16px;
-  height: 534px;
   background-position: bottom;
 }
 
@@ -214,6 +271,8 @@ body {
 .delivery-form-description {
   font-weight: 400;
 }
+
+/* Блок с адресом и контактными данными */
 
 .info {
   background: url("../images/background/background-info.jpg") no-repeat;
@@ -261,6 +320,14 @@ body {
   font-weight: 400;
 }
 
+/* Подвал */
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 153px;
+}
+
 .footer-menu-item-link {
   text-decoration: none;
   color: #2D3440;
@@ -287,25 +354,25 @@ body {
   line-height: 20px;
 }
 
+/* Блок списка с мороженым в каталоге */
+
+.offer-cards {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .ice-cream-list-item {
+  text-align: center;
   background: #FCFCFC;
+  border-radius: 8px;
   height: 281px;
   width: 270px;
-  border-radius: 8px;
 }
 
-.offer-title {
-  line-height: 24px;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.offer-description {
-  color: #565C66;
-  font-weight: 400;
-}
-
-.offer-price {
-  font-weight: 700;
-  line-height: 24px;
+.ice-cream-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
