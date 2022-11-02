@@ -12,30 +12,32 @@
     <!-- Шапка сайта: логотип, меню, контакты, поиск, логин и корзина-->
     <header class="main-header">
       <nav class="navigation">
-          <img src="./images/logos/logo.svg" alt="Логотип Gllacy Shop." height="56" width="137">
-        <a class="navigation-catalog-item-link button-catalog" href="catalog.html">
-          Каталог
-          <img src="./images/other/arrow-header-menu.svg" height="16" width="16" alt="Иконка каталога.">
-        </a>
-        <ul class="navigation-catalog">
-          <li class="navigation-catalog-item">
-            <b class="catalog-title">Новинки</b>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Сливочное</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Щербет</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Фруктовый лед</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Мелорин</a>
-          </li>
-        </ul>
-        <a class="navigation-catalog-item-link" href="#">Доставка и оплата</a>
-        <a class="navigation-catalog-item-link" href="#">О компании</a>
+        <img src="./images/logos/logo.svg" alt="Логотип Gllacy Shop." height="56" width="137">
+        <div class="drop-menu">
+          <a class="navigation-catalog-item-link button-catalog catalog-reserv" href="catalog.html">
+            Каталог
+            <img class="navigation-catalog-img" src="./images/other/arrow-header-menu.svg" height="16" width="16" alt="Иконка каталога.">
+          </a>
+          <ul class="navigation-catalog">
+            <li class="navigation-catalog-item catalog-decoration">
+              <b class="catalog-title">Новинки</b>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="catalog.html">Щербет</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="catalog.html">Фруктовый лед</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="catalog.html">Мелорин</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navigation-catalog-item-link catalog-reserv" href="#">Доставка и оплата</a>
+        <a class="navigation-catalog-item-link catalog-reserv" href="#">О компании</a>
       </nav>
       <nav class="navigation-second">
         <ul class="navigation-list">
@@ -46,18 +48,36 @@
             <a href="#">
               <img src="./images/other/search.svg" alt="Поиск по сайту." height="16" width="16">
             </a>
+            <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+            </form>
           </li>
           <li class="navigation-item button-input">
             <a class="button-link-icon-position" href="#">
               <img src="./images/other/input.svg" alt="Вход." height="16" width="16">
               Вход
             </a>
+            <form action="https://echo.htmlacademy.ru/" class="input-form" method="post">
+              <h2 class="input-form-title">Личный кабинет</h2>
+              <input type="email" placeholder="email@example.com">
+              <input type="password" placeholder="Password">
+              <div class="input-form-footer">
+                <input type="submit" value="Войти">
+                <ul class="input-form-list">
+                  <li class="input-fotm-item"><a href="#">Забыли пароль?</a></li>
+                  <li class="input-fotm-item"><a href="#">Регистрация</a></li>
+                </ul>
+              </div>
+            </form>
           </li>
           <li class="navigation-item button-backet">
             <a class="button-link-icon-position" href="#">
               <img src="./images/other/basket.svg" alt="Корзина." height="16" width="16">
               2 товара
             </a>
+            <div class="backet-box">
+              <h2 class="backet-box-title">Ваша корзина пока пуста</h2>
+            </div>
           </li>
         </ul>
       </nav>
@@ -314,6 +334,16 @@
         </a>
       </section>
     </footer>
+    <!-- Модальное окно -->
+    <div class="modal-window modal-window-close">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="modal-form-title"> Мы обязательно ответим вам!</h2>
+        <input type="text" name="modal-form-name" placeholder="Имя и фамилия">
+        <input type="text" name="modal-form-email" placeholder="Имя и фамилия">
+        <textarea class="modal-form-area" name="modal-form-area" placeholder="В свободной форме" rows="10"></textarea>
+        <button class="modal-button" type="submit">Отправить</button>
+      </form>
+    </div>
     </div>
   </body>
 </html>
