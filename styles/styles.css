@@ -65,13 +65,15 @@ a {
   margin: 0 0 0 16px;
 }
 
-.drop-menu:hover .button-catalog {
+.drop-menu:hover .button-catalog,
+.drop-menu:focus-within .button-catalog {
   background: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
 }
 
-.drop-menu:hover .navigation-catalog {
+.drop-menu:hover .navigation-catalog,
+.drop-menu:focus-within .navigation-catalog {
   display: flex;
   flex-direction: column;
   padding: 8px 13px 8px 16px;
@@ -135,7 +137,8 @@ a {
   position: relative;
 }
 
-.button-search:hover .search-form {
+.button-search:hover .search-form,
+.button-search:focus-within .search-form  {
   display: block;
 }
 
@@ -270,17 +273,27 @@ a {
   width: 198px;
 }
 
+.backet-box-content-button-closed {
+  border: none;
+  background: url("../images/other/сross.png") no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
 .backet-box-content-footer-price {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
 
-.button-backet:hover .backet-box {
+.button-backet:hover .backet-box,
+.button-backet:focus-within .backet-box {
   display: block;
 }
 
-.button-input:hover .input-form {
+.button-input:hover .input-form,
+.button-input:focus-within .input-form {
   display: flex;
 }
 
@@ -969,7 +982,7 @@ a {
   margin: 16px 0 0 0;
 }
 
-.modal-button {
+.modal-button-send {
   padding: 12px 32px;
   margin: 32px 0 0 auto;
   background: #FF2F64;
@@ -984,4 +997,15 @@ a {
 
 .modal-window-close {
   display: none;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border: none;
+  background: url("../images/other/сross.png") no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
 }
