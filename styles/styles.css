@@ -474,14 +474,14 @@ a {
   background: url("../images/raspbery.png") no-repeat;
   background-color: #FF7799;
   background-position: right;
-  background-size: 40%;
+  background-size: 39%;
 }
 
 .card-marshmallow {
   background: url("../images/marshmallow.png") no-repeat;
   background-color: #FF7799;
   background-position: right;
-  background-size: 40%;
+  background-size: 39%;
 }
 
 .gift-card-title {
@@ -688,6 +688,8 @@ a {
   margin: 6px;
   background: #FFFFFF;
   border-radius: 16px;
+  padding: 26px;
+  color: #565C66;
 }
 
 .subscription-description {
@@ -697,6 +699,29 @@ a {
 
 .subscription-form {
   margin: 44px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-form-input {
+  padding: 14px 16px;
+  width: 332px;
+  border: 1px solid #B9B9B9;
+  box-sizing: border-box;
+  line-height: 20px;
+}
+
+.subscription-form-button {
+  background: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  color: #FCFCFC;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  width: 152px;
+  font-size: 16px;
 }
 
 .visually-hidden {
