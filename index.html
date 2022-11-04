@@ -60,7 +60,7 @@
             <form action="https://echo.htmlacademy.ru/" class="input-form" method="post">
               <h2 class="input-form-title">Личный кабинет</h2>
               <input type="email" placeholder="email@example.com">
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
               <div class="input-form-footer">
                 <input type="submit" value="Войти">
                 <ul class="input-form-list">
@@ -265,21 +265,27 @@
         </div>
         <div class="delivery-form">
           <h2 class="visually-hidden">Заказ доставки.</h2>
-          <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить заказ.</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              Дата
-              <input type="text" name="appointment-date" placeholder="01.04.2020">
-            </label>
-            <label>
-              Телефон
-              <input type="text" name="appointment-number" placeholder="+7 800 999-00-00">
-            </label>
-            <label>
-              Адрес
-              <input type="text" name="appointment-addres" placeholder="ул. Большая Конюшенная, 19/8">
-            </label>
-            <button class="button" type="submit">Отправить</button>
+            <p class="field-group">
+              <label class="form-label" for="appointment-date">
+                Дата
+                <img src="./images/other/info.png" height="14" width="14">
+              </label>
+              <input type="text" name="appointment-date" id="appointment-date" placeholder="01.04.2020">
+            </p>
+            <p class="field-group">
+              <label class="form-label" for="appointment-number">Телефон</label>
+              <input type="text" name="appointment-number" id="appointment-number" placeholder="+7 800 999-00-00">
+            </p>
+            <p class="field-group appointment-addres">
+              <label class="form-label" for="appointment-addres">
+                Адрес
+                <img src="./images/other/info.png" height="14" width="14">
+              </label>
+              <input type="text" name="appointment-addres" id="appointment-addres" placeholder="ул. Большая Конюшенная, 19/8">
+            </p>
+            <button class="appointment-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
