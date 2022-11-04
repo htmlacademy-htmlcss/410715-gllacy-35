@@ -14,31 +14,33 @@
     <header class="main-header">
       <nav class="navigation">
         <a href="index.html">
-          <img src="./images/logos/logo.svg" alt="Gllacy Shop." height="56" width="137">
+          <img src="./images/logos/logo.svg" alt="Логотип Gllacy Shop." height="56" width="137">
         </a>
-        <a class="navigation-catalog-item-link button-catalog" href="#">
-          Каталог
-          <img src="./images/other/arrow-header-menu.svg" height="16" width="16"  alt="Иконка каталога.">
-        </a>
-        <ul class="navigation-catalog">
-          <li class="navigation-catalog-item">
-            <b class="catalog-title">Новинки</b>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Сливочное</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Щербет</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Фруктовый лед</a>
-          </li>
-          <li class="navigation-catalog-item">
-            <a class="navigation-catalog-item-link" href="#">Мелорин</a>
-          </li>
-        </ul>
-        <a class="navigation-catalog-item-link" href="#">Доставка и оплата</a>
-        <a class="navigation-catalog-item-link" href="#">О компании</a>
+        <div class="drop-menu">
+          <a class="navigation-catalog-item-link button-catalog catalog-reserv" href="#">
+            Каталог
+            <img class="navigation-catalog-img" src="./images/other/arrow-header-menu.svg" height="16" width="16" alt="Иконка каталога.">
+          </a>
+          <ul class="navigation-catalog">
+            <li class="navigation-catalog-item catalog-decoration">
+              <b class="catalog-title">Новинки</b>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="#">Сливочное</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="#">Щербет</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="#">Фруктовый лед</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a class="drop-menu-item" href="#">Мелорин</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navigation-catalog-item-link catalog-reserv" href="#">Доставка и оплата</a>
+        <a class="navigation-catalog-item-link catalog-reserv" href="#">О компании</a>
       </nav>
       <nav class="navigation-second">
         <ul class="navigation-list">
@@ -49,18 +51,70 @@
             <a href="#">
               <img src="./images/other/search.svg" alt="Поиск по сайту." height="16" width="16">
             </a>
+            <form action="https://echo.htmlacademy.ru/" class="search-form" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+            </form>
           </li>
           <li class="navigation-item button-input">
             <a class="button-link-icon-position" href="#">
               <img src="./images/other/input.svg" alt="Вход." height="16" width="16">
               Вход
             </a>
+            <form action="https://echo.htmlacademy.ru/" class="input-form" method="post">
+              <h2 class="input-form-title">Личный кабинет</h2>
+              <input type="email" placeholder="email@example.com">
+              <input type="password" placeholder="Password">
+              <div class="input-form-footer">
+                <input type="submit" value="Войти">
+                <ul class="input-form-list">
+                  <li class="input-fotm-item"><a href="#">Забыли пароль?</a></li>
+                  <li class="input-fotm-item"><a href="#">Регистрация</a></li>
+                </ul>
+              </div>
+            </form>
           </li>
           <li class="navigation-item button-backet">
             <a class="button-link-icon-position" href="#">
               <img src="./images/other/basket.svg" alt="Корзина." height="16" width="16">
               2 товара
             </a>
+            <div class="backet-box">
+              <div class="backet-box-content">
+                <h2 class="backet-box-content-title">Корзина</h2>
+                <ol class="backet-box-content-list">
+                  <li class="backet-box-content-list-item">
+                    <a href="#">
+                      <img src="./images/catalog/raspberry.png" alt="Поиск по сайту." height="46" width="46">
+                    </a>
+                    <div class="backet-box-content-description">
+                      <h3 class="backet-box-content-description-title">Малинка</h3>
+                      <span class="backet-box-content-description-other">1 кг х 310 &#8381;</span>
+                    </div>
+                    <span class="backet-box-content-price">310 &#8381;</span>
+                    <button class="backet-box-content-button-closed" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
+                  </li>
+                  <li class="backet-box-content-list-item">
+                    <a href="#">
+                      <img src="./images/catalog/bubble-gum.png" alt="Поиск по сайту." height="46" width="46">
+                    </a>
+                    <div class="backet-box-content-description">
+                      <h3 class="backet-box-content-description-title">Бабл-гам</h3>
+                      <span class="backet-box-content-description-other">1 кг х 320 &#8381;</span>
+                    </div>
+                    <span class="backet-box-content-price">480 &#8381;</span>
+                    <button class="backet-box-content-button-closed" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
+                  </li>
+                </ol>
+                <div class="backet-box-content-footer">
+                  <button class="backet-box-content-button-buy">Оформить заказ</button>
+                  <span class="backet-box-content-footer-price">Итого: 790 &#8381;</span>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -144,8 +198,8 @@
           <p class="offer-description">Сливочное мороженое с малиновым джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -155,8 +209,8 @@
           <p class="offer-description">Фисташковый пломбир с кусочками шоколада</p>
           <div class="offer-footer">
             <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -166,8 +220,8 @@
           <p class="offer-description">Крем-брюле <br> с черничным джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img  src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -177,8 +231,8 @@
           <p class="offer-description">Ванильный пломбир <br> со сладкой посыпкой</p>
           <div class="offer-footer">
             <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -188,8 +242,8 @@
           <p class="offer-description">Сливочное мороженое с ежевичным джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -199,8 +253,8 @@
           <p class="offer-description">Сливочный пломбир <br> с банановым вкусом</p>
           <div class="offer-footer">
             <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -210,8 +264,8 @@
           <p class="offer-description">Классический шоколадный пломбир</p>
           <div class="offer-footer">
             <strong class="offer-price">240 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img  src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -221,8 +275,8 @@
           <p class="offer-description">Сливочный пломбир <br> с клубничным вкусом</p>
           <div class="offer-footer">
             <strong class="offer-price">300 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -232,8 +286,8 @@
           <p class="offer-description">Освежающий лимонный сорбет</p>
           <div class="offer-footer">
             <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -243,8 +297,8 @@
           <p class="offer-description">Сливочный пломбир <br> с ментоловым сиропом</p>
           <div class="offer-footer">
             <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -254,8 +308,8 @@
           <p class="offer-description">Фисташковый пломбир с шоколадным сиропом</p>
           <div class="offer-footer">
             <strong class="offer-price">360 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img  src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -265,8 +319,8 @@
           <p class="offer-description">Классическое <br> крем-брюле</p>
           <div class="offer-footer">
             <strong class="offer-price">280 &#8381;/кг</strong>
-            <a class="offer-button-buy">
-              <img src="./images/other/offer-basket.png" alt="Корзина.">
+            <a class="offer-button-buy" href="#">
+              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
         </li>
@@ -306,8 +360,8 @@
         <h2 class="visually-hidden">Правообладатель копирайта.</h2>
         <a class="copyright-link" href="https://htmlacademy.ru/" target="_blank">
           <img class="copyright-logo" src="./images/logos/logo-htmlacademy.svg" alt="HTML Academy." height="27" width="93">
+          <p class="copyright-description">Сделано в .html academy © 2021</p>
         </a>
-        <p class="copyright-description">Сделано в .html academy © 2021</p>
       </section>
     </footer>
     </div>
