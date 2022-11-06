@@ -129,7 +129,7 @@
           <a class="catalog-navigation-item-link" href="#">Каталог</a>
         </li>
         <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link" href="#">Сливочное мороженное</a>
+          <a class="catalog-navigation-item-link" href="#">Сливочное мороженое</a>
         </li>
       </ul>
     </section>
@@ -137,55 +137,66 @@
     <section class="catalog-filter">
       <h2 class="catalog-filter-title">Сливочное мороженое</h2>
       <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="sorting">Сортировка:</label>
-        <select name="sorting-item" >
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <label class="price">Цена: 100 &#8381; - 500 &#8381;</label>
-        <input type="range" min="100" max="500" step="10" value="250">
-        <label class="fat-filter">Жирность</label>
-          <label>
-            <input type="radio" name="question-fat-content" value="0">
-            0%
-          </label>
-          <label>
-            <input type="radio" name="question-fat-content" value="10" checked>
-            до 10%
-          </label>
-          <label>
-            <input type="radio" name="question-fat-content" value="10-30">
-            до 30%
-          </label>
-          <label>
-            <input type="radio" name="question-fat-content" value="30-100">
-            выше 30%
-          </label>
-        <label class="filles">Наполнители</label>
-          <label>
-            <input type="checkbox" name="filles-chocolate">
-            шоколадные
-          </label>
-          <label>
-            <input type="checkbox" name="filles-sugar">
-            сахарные посыпки
-          </label>
-          <label>
-            <input type="checkbox" name="filles-fruit">
-            фрукты
-          </label>
-          <label>
-            <input type="checkbox" name="filles-syrups">
-            сиропы
-          </label>
-          <label>
-            <input type="checkbox" name="filles-jams">
-            джемы
-          </label>
-          <button type="button">Применить</button>
+        <div class="catalog-filter-form-group">
+          <label class="catalog-filter-form-group-title">Сортировка:</label>
+          <select name="sorting-item" >
+            <option value="1">По популярности</option>
+            <option value="2">По цене</option>
+            <option value="3">По жирности</option>
+          </select>
+        </div>
+        <div class="catalog-filter-form-group">
+          <label class="catalog-filter-form-group-title">Цена: 100 &#8381; - 500 &#8381;</label>
+          <input type="range" min="100" max="500" step="10" value="250">
+        </div>
+        <div class="catalog-filter-form-group">
+          <span class="fat-filter">Жирность</span>
+          <div class="fat-group">
+            <label>
+              <input type="radio" name="question-fat-content" value="0">
+              0%
+            </label>
+            <label>
+              <input type="radio" name="question-fat-content" value="10" checked>
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="question-fat-content" value="10-30">
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="question-fat-content" value="30-100">
+              выше 30%
+            </label>
+          </div>
+          </div>
+        <div class="catalog-filter-form-group catalog-filter-form-group-filles ">
+          <span class="catalog-filter-form-group-title">Наполнители</span>
+          <div class="filles-group">
+            <label>
+              <input type="checkbox" name="filles-chocolate">
+              шоколадные
+            </label>
+            <label>
+              <input type="checkbox" name="filles-sugar">
+              сахарные посыпки
+            </label>
+            <label>
+              <input type="checkbox" name="filles-fruit">
+              фрукты
+            </label>
+            <label>
+              <input type="checkbox" name="filles-syrups">
+              сиропы
+            </label>
+            <label>
+              <input type="checkbox" name="filles-jams">
+              джемы
+            </label>
+
+            <button class="filter-button" type="button">Применить</button>
+          </div>
+        </div>
       </form>
     </section>
     <!-- Блок списка с мороженым-->
