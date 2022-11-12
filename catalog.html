@@ -335,7 +335,38 @@
           </div>
         </li>
       </ul>
-      <button type="button">Показать еще</button>
+      <div class="catalog-pagination">
+        <button class="pagination-button" type="button">Показать ещё</button>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-prev">
+              ❮
+              <span class="visually-hidden">Предыдущая страница.</span>
+            </a>
+          </li>
+          <li class="pagination-item pagination-current">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              ❯
+              <span class="visually-hidden">Следующая страница.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
      <!-- Подвал с контактами, дополнительными ссылками и копирайтом-->
      <footer class="main-footer">
@@ -360,7 +391,10 @@
       </nav>
       <nav class="footer-menu">
         <ul class="footer-menu-list">
-          <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Для поставщиков</a></li>
+          <li class="footer-menu-item">
+            <img class="heart" src="./images/other/heart.svg" alt="Сердечко." />
+            <a class="footer-menu-item-link" href="#">Для поставщиков</a>
+          </li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Наши документы</a></li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">О производстве</a></li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Экологические стандарты</a></li>

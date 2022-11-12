@@ -84,7 +84,8 @@ a {
   color: #FCFCFC;
   background: url("../images/other/arrow-down-header-menu.svg") #FF4A78 no-repeat;
   background-position: center right 16px;
-  border-radius: 2px solid #000000;
+  border: 2px solid #000000;
+  padding: 6px 36px 6px 14px
 }
 
 .button-catalog {
@@ -94,8 +95,10 @@ a {
   border-radius: 30px;
 }
 
-.drop-menu:hover .navigation-catalog,
-.drop-menu:focus-within .navigation-catalog {
+.drop-menu:active .navigation-catalog,
+.drop-menu:focus .navigation-catalog,
+.drop-menu:focus-within .navigation-catalog,
+.drop-menu:hover .navigation-catalog {
   display: flex;
   flex-direction: column;
   padding: 8px 13px 8px 16px;
@@ -133,8 +136,8 @@ a {
 .navigation-catalog {
   display: none;
   position: absolute;
-  top: 0;
-  margin: 34px 0 0 0;
+  top: 38px;
+  margin: 0;
   width: 135px;
   border-radius: 4px;
   background: #FCFCFC;
@@ -441,57 +444,115 @@ a {
 }
 
 /* Блок с слайдерами */
-
-.galery {
-  margin: 24px 0 0 0;
-}
-
-.galery-list {
-  display: flex;
-  align-items: center;
-}
-
-.galery-list-item {
+.slider-block {
   display: flex;
 }
 
-.icecream {
-  height: 150px;
-  width: auto;
-  opacity: 0.4;
-}
-
-.action {
-  height: 507px;
-  width: auto;
-  opacity: 1;
-}
-
-.galery-info {
+.slider-text {
+  display: flex;
+  flex-direction: column;
   width: 470px;
-  margin-right: auto;
+  padding: 0 0 0 70px;
+  margin: 0;
 }
 
-.galery-info-header {
+.slider-title {
   font-size: 36px;
   font-weight: 900;
   line-height: 46px;
+  margin: 131px 0 0 0;
 }
 
-.galery-info-descriptions {
+.slider-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   margin: 24px 0 48px 0;
 }
 
-.galery-button-buy {
+.slider-button-buy {
   background: #FCFCFC;
-  padding: 12px 32px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  font-family: "Inter" , sans-serif;
+  font-size: 16px;
+  padding: 8px 32px;
   border-radius: 26px;
   line-height: 20px;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  width: 139px;
+}
+
+.slider-button-buy:hover {
+  background: rgba(252, 252, 252, 0.4);
+}
+
+.slider-button-buy:active {
+  border-color: #2D3440;
+}
+
+.slider-button-buy:focus {
+  background: rgba(252, 252, 252, 0.4);
+  border-color: #2D3440;
+}
+
+.disable {
+  background: #E7E7E7;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  color: #B9B9B9;
+}
+
+.slider-images-list {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 0 21px;
+  padding: 0;
+}
+
+.slider-image {
+  height: 150px;
+  width: 66px;
+  object-fit: fill;
+  position: relative;
+}
+
+.slider-image:not(:first-child) {
+  margin: 0 0 0 79px;
+}
+
+.slider-image:not(:first-child) img {
+  opacity: 0.4;
+}
+
+.substrate {
+  position: absolute;
+  background: #FFCBD8;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  top: 25px;
+  left: -17px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.active {
+  height: 507px;
+  width: 306px;
+  order: -1;
+}
+
+.active .substrate {
+  width: 312px;
+  height: 312px;
+  top: 100px;
+  left: 0;
+  opacity: 1;
+}
+
+.slider-image img {
+  height: inherit;
+  width: inherit;
 }
 
 .slider-footer{
@@ -984,6 +1045,13 @@ a {
   margin: 0 16px 0 0;
 }
 
+.social-navigation-item {
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+
 .footer-menu {
   margin: 0 0 0 323px;
 }
@@ -997,6 +1065,17 @@ a {
   font-size: 14px;
   line-height: 20px;
   gap: 8px 24px;
+}
+
+.footer-menu-list .footer-menu-item:first-child {
+  position: relative;
+  font-weight: 700;
+}
+
+.heart {
+  position: absolute;
+  top: 3px;
+  left: -23px;
 }
 
 .footer-menu-item-link {
@@ -1108,6 +1187,45 @@ a {
 
 .filter-button {
   margin: 0 0 0 16px;
+}
+
+/* Пагинация каталока */
+
+.catalog-pagination {
+  display: flex;
+  justify-content: end;
+  margin: 57px 0 0 0;
+  padding: 0 0 80px 0;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.pagination-button {
+  background: #FCFCFC;
+  display: inline-block;
+  margin: 0 335px 0 0;
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.pagination-item {
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+}
+
+.pagionation-current {
+  background: #FCFCFC;
 }
 
 /* Модальное окно*/
