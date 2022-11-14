@@ -83,38 +83,49 @@
     <main class="main-index">
       <!-- Блок с слайдером мороженного-->
       <section class="slider">
+        <button class="slider-button slider-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
+          <span class="visually-hidden">Предыдущий слайд.</span>
+        </button>
+        <button class="slider-button slider-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
+          <span class="visually-hidden">Следующий слайд.</span>
+        </button>
         <h2 class="visually-hidden">Слайды с выбором мороженого.</h2>
         <div class="slider-block">
           <ol class="slider-text">
             <li class="slider-item current">
-              <h2 class="slider-title">Нежный пломбир <br> с клубничным джемом</h2>
-              <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом – <br> это идеальный десерт для всей семьи.</p>
-              <button class="slider-button-buy" type="button">Заказать</button>
+              <div class="slide-text">
+                <h2 class="slider-title">Нежный пломбир <br> с клубничным джемом</h2>
+                <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом – <br> это идеальный десерт для всей семьи.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image slider-image-current" src="./images/slider/slider-1.png" alt="Нежный пломбир с клубничным джемом." height="507" width="306">
+              </div>
             </li>
-            <li class="slider-description-item visually-hidden">
-              <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
-              <p class="slider-description">Сливочное мороженое с ярким банановым <br> вкусом подарит вам свежесть и наслаждение <br> даже в самый жаркий летний день.</p>
-              <button class="slider-button-buy" type="button">Заказать</button>
+            <li class="slider-item next">
+              <div class="slide-text visually-hidden">
+                <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
+                <p class="slider-description">Сливочное мороженое с ярким банановым <br> вкусом подарит вам свежесть и наслаждение <br> даже в самый жаркий летний день.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image" src="./images/slider/slider-2.png" alt="Сливочное мороженое со вкусом банана." height="507" width="306">
+              </div>
             </li>
-            <li class="slider-description-item visually-hidden">
-              <h2 class="slider-title">Карамельный пломбир <br> с маршмеллоу</h2>
-              <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет <br> сердца сладкоежек всех возрастов.</p>
-              <button class="slider-button-buy" type="button">Заказать</button>
-            </li>
-          </ol>
-          <ol class="slider-images-list">
-            <li class="slider-image active">
-              <img src="./images/slider/slider-1.png" alt="Нежный пломбир с клубничным джемом.">
-              <span class="substrate"></span>
-            </li>
-            <li class="slider-image">
-              <img src="./images/slider/slider-2.png" alt="Сливочное мороженое со вкусом банана.">
-              <span class="substrate">
-
-              </span></li>
-            <li class="slider-image">
-              <img src="./images/slider/slider-3.png" alt="Карамельный пломбир с маршмеллоу.">
-              <span class="substrate"></span>
+            <li class="slider-item prev">
+              <div class="slide-text visually-hidden">
+                <h2 class="slider-title">Карамельный пломбир <br> с маршмеллоу</h2>
+                <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет <br> сердца сладкоежек всех возрастов.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image" src="./images/slider/slider-3.png" alt="Карамельный пломбир с маршмеллоу." height="507" width="306">
+              </div>
             </li>
           </ol>
         </div>
