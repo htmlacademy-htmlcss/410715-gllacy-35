@@ -1219,7 +1219,7 @@ a {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   gap: 90px 30px;
-  margin: 95px 0 0 0;
+  margin: 96px 0 0 0;
   padding: 0;
 }
 
@@ -1255,7 +1255,7 @@ a {
 }
 
 .sorting-item {
-  padding: 10px 29px 10px 16px;
+  padding: 10px 61px 10px 16px;
   font-family: inherit;
   font-size: 14px;
   color: inherit;
@@ -1281,11 +1281,7 @@ a {
 .catalog-filter-form-group {
   display: flex;
   flex-direction: column;
-  margin: 0 24px 0 0;
-}
-
-.catalog-filter-form-group-filles {
-  grid-column: 1 / -1;
+  margin: 0 16px 0 0;
 }
 
 .fat-group,
@@ -1295,13 +1291,15 @@ a {
   border-radius: 18px;
   font-size: 14px;
   font-family: inherit;
+  line-height: 20px;
 }
 
 .fat-group {
   padding: 8px 24px;
 }
 
-.fat-group input {
+.fat-group input,
+.filles-group input {
   display: none;
 }
 
@@ -1310,13 +1308,18 @@ a {
   margin: 0 0 0 40px;
 }
 
-.fat-group label:first-of-type {
+.filles-group label {
+  position: relative;
+  margin: 0 0 0 41px;
+}
+
+.fat-group label:first-of-type,
+.filles-group label:first-of-type {
   margin: 0 0 0 24px;
 }
 
 .fat-group label:before{
   content: "";
-  display: inline-block;
   position: absolute;
   left: -24px;
   top: 2px;
@@ -1340,13 +1343,25 @@ a {
 }
 
 .filles-group {
-  padding: 10px 24px;
-  display: inline;
+  padding: 9px 24px;
+}
+
+.filles-group label::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 2px;
+  height: 16px;
+  width: 16px;
+  background: url(../images/filter/filles-input-default.svg) no-repeat;
+}
+
+.filles-group input:checked + label::before {
+  background: url(../images/filter/filles-input-checked.svg) no-repeat;
 }
 
 .filter-button {
-  margin: 0 0 0 16px;
-  padding: 6px 52px;
+  padding: 7px 54px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
   border: 2px solid #FCFCFC;
@@ -1370,24 +1385,25 @@ a {
 
 .pagination-button {
   position: absolute;
-  left: 490px;
-  top: 0;
+  left: 486px;
+  top: 2px;
   background: #FCFCFC;
   display: inline-block;
   margin: 0 335px 0 0;
-  padding: 8px 32px;
+  padding: 8px 31px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   border: 4px solid rgba(252, 252, 252, 0.4);
   outline: 4px solid rgba(252, 252, 252, 0.4);
-  border-radius: 26px
+  border-radius: 26px;
+  font-family: "Inter" , sans-serif;
 }
 
 .pagination {
   display: flex;
   align-items: center;
-  margin: 10px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
 .pagination-item {
