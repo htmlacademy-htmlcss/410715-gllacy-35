@@ -15,10 +15,7 @@
       <nav class="navigation">
         <img src="./images/logos/logo.svg" alt="Логотип Gllacy Shop." height="56" width="137">
         <div class="drop-menu">
-          <a class="navigation-catalog-item-link button-catalog catalog-reserv" href="catalog.html">
-            Каталог
-            <img class="navigation-catalog-img" src="./images/other/arrow-header-menu.svg" height="16" width="16" alt="Иконка каталога.">
-          </a>
+          <a class="button-catalog" href="catalog.html">Каталог</a>
           <ul class="navigation-catalog">
             <li class="navigation-catalog-item catalog-decoration">
               <b class="catalog-title">Новинки</b>
@@ -37,8 +34,8 @@
             </li>
           </ul>
         </div>
-        <a class="navigation-catalog-item-link catalog-reserv" href="#">Доставка и оплата</a>
-        <a class="navigation-catalog-item-link catalog-reserv" href="#">О компании</a>
+        <a class="navigation-catalog-item-link" href="#">Доставка и оплата</a>
+        <a class="navigation-catalog-item-link" href="#">О компании</a>
       </nav>
       <nav class="navigation-second">
         <ul class="navigation-list">
@@ -86,43 +83,53 @@
     <!-- Основной блок с информацией сайта-->
     <main class="main-index">
       <!-- Блок с слайдером мороженного-->
-      <section class="galery">
+      <section class="slider">
+        <button class="slider-button slider-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
+          <span class="visually-hidden">Предыдущий слайд.</span>
+        </button>
+        <button class="slider-button slider-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
+          <span class="visually-hidden">Следующий слайд.</span>
+        </button>
         <h2 class="visually-hidden">Слайды с выбором мороженого.</h2>
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее мороженное.</span>
-        </button>
-        <ol class="galery-list">
-          <!-- Первый слайд -->
-          <li class="galery-list-item action">
-            <section class="galery-info">
-              <h2 class="galery-info-header">Нежный пломбир <br>с клубничным джемом</h2>
-              <p class="galery-info-descriptions">Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – <br> это идеальный десерт для всей семьи.</p>
-              <a class="galery-button-buy" href="#">Заказать</a>
-            </section>
-            <img class="icecream action" src="./images/slider/slider-1.png" height="507" width="306" alt="Нежный пломбир с клубничным джемом.">
-          </li>
-          <!-- Второй слайд -->
-          <li class="galery-list-item ">
-            <section class="galery-info visually-hidden">
-              <h2 class="galery-info-header">Сливочное мороженое со вкусом банана</h2>
-              <p class="galery-info-descriptions">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-              <a class="button" href="#">Заказать</a>
-            </section>
-            <img class="icecream" src="./images/slider/slider-2.png" alt="Сливочное мороженое со вкусом банана.">
-          </li>
-          <!-- Третий слайд-->
-          <li class="galery-list-item">
-            <section class="galery-info visually-hidden">
-              <h2 class="galery-info-header">Карамельный пломбир с маршмеллоу</h2>
-              <p class="galery-info-descriptions">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-              <a class="button" href="#">Заказать</a>
-            </section>
-            <img class="icecream" src="./images/slider/slider-3.png" alt="Карамельный пломбир с маршмеллоу.">
-          </li>
-        </ol>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее мороженное.</span>
-        </button>
+        <div class="slider-block">
+          <ol class="slider-text">
+            <li class="slider-item current">
+              <div class="slide-text">
+                <h2 class="slider-title">Нежный пломбир <br> с клубничным джемом</h2>
+                <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом – <br> это идеальный десерт для всей семьи.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image slider-image-current" src="./images/slider/slider-1.png" alt="Нежный пломбир с клубничным джемом." height="507" width="306">
+              </div>
+            </li>
+            <li class="slider-item next">
+              <div class="slide-text visually-hidden">
+                <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
+                <p class="slider-description">Сливочное мороженое с ярким банановым <br> вкусом подарит вам свежесть и наслаждение <br> даже в самый жаркий летний день.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image" src="./images/slider/slider-2.png" alt="Сливочное мороженое со вкусом банана." height="507" width="306">
+              </div>
+            </li>
+            <li class="slider-item prev">
+              <div class="slide-text visually-hidden">
+                <h2 class="slider-title">Карамельный пломбир <br> с маршмеллоу</h2>
+                <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет <br> сердца сладкоежек всех возрастов.</p>
+                <button class="slider-button-buy" type="button">Заказать</button>
+              </div>
+              <div class="slider-image-substrate">
+                <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
+                <img class="slider-image" src="./images/slider/slider-3.png" alt="Карамельный пломбир с маршмеллоу." height="507" width="306">
+              </div>
+            </li>
+          </ol>
+        </div>
         <div class="slider-footer">
           <nav class="slider-buttom-slide">
             <ul class="slider-list">
@@ -269,9 +276,10 @@
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить заказ.</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label class="form-label" for="appointment-date">
+              <label class="form-label delivery-data" for="appointment-date">
                 Дата
-                <img src="./images/other/info.png" height="14" width="14">
+                <!-- src="./images/other/info.png" -->
+                <button class="button-data-clue" type="button"><span class="clue">Введите дату доставки</span></button>
               </label>
               <input type="text" name="appointment-date" id="appointment-date" placeholder="01.04.2020">
             </p>
@@ -300,7 +308,7 @@
           <p class="info-description-number">Для заказов по телефону:</p>
           <b class="info-number">+7 (812) 812-12-12</b>
           <p class="info-description-time">(с 10 до 20 ежедневно)</p>
-          <button class="info-description-button">Форма обратной связи</button>
+          <a class="info-description-button">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -327,7 +335,10 @@
       </nav>
       <nav class="footer-menu">
         <ul class="footer-menu-list">
-          <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Для поставщиков</a></li>
+          <li class="footer-menu-item">
+            <img class="heart" src="./images/other/heart.svg" alt="Сердечко." />
+            <a class="footer-menu-item-link" href="#">Для поставщиков</a>
+          </li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Наши документы</a></li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">О производстве</a></li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Экологические стандарты</a></li>
