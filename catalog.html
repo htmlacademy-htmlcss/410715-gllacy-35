@@ -147,22 +147,22 @@
           <input type="range" min="100" max="500" step="10" value="250">
         </div>
         <div class="catalog-filter-form-group">
-          <span class="fat-filter">Жирность</span>
+          <span class="catalog-filter-form-group-title">Жирность</span>
           <div class="fat-group">
-            <label>
-              <input type="radio" name="question-fat-content" value="0">
+            <input type="radio" name="question-fat-content" value="0" id="radio-1">
+            <label for="radio-1">
               0%
             </label>
-            <label>
-              <input type="radio" name="question-fat-content" value="10" checked>
+            <input type="radio" name="question-fat-content" value="10" id="radio-2" checked>
+            <label for="radio-2">
               до 10%
             </label>
-            <label>
-              <input type="radio" name="question-fat-content" value="10-30">
+            <input type="radio" name="question-fat-content" value="10-30" id="radio-3">
+            <label for="radio-3">
               до 30%
             </label>
-            <label>
-              <input type="radio" name="question-fat-content" value="30-100">
+            <input type="radio" name="question-fat-content" value="30-100" id="radio-4">
+            <label for="radio-4">
               выше 30%
             </label>
           </div>
@@ -171,11 +171,11 @@
           <span class="catalog-filter-form-group-title">Наполнители</span>
           <div class="filles-group">
             <label>
-              <input type="checkbox" name="filles-chocolate">
+              <input type="checkbox" name="filles-chocolate" checked>
               шоколадные
             </label>
             <label>
-              <input type="checkbox" name="filles-sugar">
+              <input type="checkbox" name="filles-sugar" checked>
               сахарные посыпки
             </label>
             <label>
@@ -190,10 +190,9 @@
               <input type="checkbox" name="filles-jams">
               джемы
             </label>
-
-            <button class="filter-button" type="button">Применить</button>
           </div>
         </div>
+        <button class="filter-button" type="submit">Применить</button>
       </form>
     </section>
     <!-- Блок списка с мороженым-->
