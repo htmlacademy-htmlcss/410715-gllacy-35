@@ -890,7 +890,8 @@ a {
 
 .subscription-form-input {
   padding: 14px 16px;
-  width: 332px;
+  width: 100%;
+  margin: 0 22px 0 0;
   border: 1px solid #B9B9B9;
   box-sizing: border-box;
   line-height: 20px;
@@ -904,9 +905,9 @@ a {
   color: #FCFCFC;
   font-weight: 700;
   line-height: 20px;
-  margin: 0;
   font-size: 16px;
-  padding: 8px 33px;
+  padding: 12px 32px;
+  margin: auto 0;
 }
 
 .visually-hidden {
@@ -1255,7 +1256,7 @@ a {
 }
 
 .sorting-item {
-  padding: 10px 61px 10px 16px;
+  padding: 10px 61px 10px 14px;
   font-family: inherit;
   font-size: 14px;
   color: inherit;
@@ -1281,8 +1282,59 @@ a {
 .catalog-filter-form-group {
   display: flex;
   flex-direction: column;
-  margin: 0 16px 0 0;
+  margin: 0 25px 0 0;
 }
+
+.catalog-filter-form-group-filles {
+  margin: 0 15px 0 0;
+}
+
+
+.range-block {
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  padding: 17px 16px;
+}
+
+.range-block-band {
+  position: relative;
+  width: 164px;
+  height: 2px;
+  background: rgba(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range-block-band-meaning {
+  position: absolute;
+  height: 2px;
+  width: 71px;
+  left: 33px;
+  background: #565C66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 6px solid #2D3440;
+  background: #FCFCFC;
+  padding: 0;
+}
+
+.range-toggle-min {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.range-toggle-max {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+
 
 .fat-group,
 .filles-group {
@@ -1385,12 +1437,12 @@ a {
 
 .pagination-button {
   position: absolute;
-  left: 486px;
+  left: 488px;
   top: 2px;
   background: #FCFCFC;
   display: inline-block;
   margin: 0 335px 0 0;
-  padding: 8px 31px;
+  padding: 8px 28px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;

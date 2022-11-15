@@ -144,7 +144,15 @@
         </div>
         <div class="catalog-filter-form-group">
           <label class="catalog-filter-form-group-title">Цена: 100 &#8381; - 500 &#8381;</label>
-          <input type="range" min="100" max="500" step="10" value="250">
+          <input class="visually-hidden" type="range" min="100" max="500" step="10" value="250">
+          <div class="range-block">
+            <div class="range-block-band">
+              <div class="range-block-band-meaning">
+                <button class="range-toggle range-toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
+                <button class="range-toggle range-toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="catalog-filter-form-group">
           <span class="catalog-filter-form-group-title">Жирность</span>
@@ -167,7 +175,7 @@
             </label>
           </div>
           </div>
-        <div class="catalog-filter-form-group catalog-filter-form-group-filles ">
+        <div class="catalog-filter-form-group catalog-filter-form-group-filles">
           <span class="catalog-filter-form-group-title">Наполнители</span>
           <div class="filles-group">
             <input type="checkbox" name="filles-chocolate" id="checkbox-1" checked>
@@ -259,7 +267,7 @@
           <h3 class="offer-title">Шоколадка</h3>
           <p class="offer-description">Классический шоколадный пломбир</p>
           <div class="offer-footer">
-            <strong class="offer-price">240 &#8381;/кг</strong>
+            <strong class="offer-price">270 &#8381;/кг</strong>
             <a class="offer-button-buy" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
@@ -322,7 +330,7 @@
         </li>
       </ul>
       <div class="catalog-pagination">
-        <button class="pagination-button" type="button">Показать ещё</button>
+        <button class="pagination-button" type="button">Показать еще</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev">
