@@ -34,18 +34,18 @@ body {
   min-width: 1366px;
 }
 
-ul, ol {
+.decoration-list {
   list-style-type: none;
 }
 
-a {
+.decoration-link {
   text-decoration: none;
   color: inherit;
 }
 
 /* Ограничение контейнера по ширине и его выравнивание по центру */
 
-.container {
+.main {
   width: 1170px;
   margin: 0 auto;
 }
@@ -453,7 +453,7 @@ a {
   color: #FCFCFC;
 }
 
-.button-active svg path {
+.button-active .button-fill {
   fill: #FCFCFC;
 }
 
