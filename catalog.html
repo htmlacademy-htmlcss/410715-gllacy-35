@@ -115,253 +115,256 @@
         </ul>
       </nav>
     </header>
-    <!-- Навигация по каталогу -->
-    <section class="catalog-navigation">
-      <h2 class="visually-hidden">Навигация по каталогу</h2>
-      <ul class="catalog-navigation-list decoration-list">
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link decoration-link" href="index.html">Главная</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link decoration-link" href="#">Каталог</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link decoration-link" href="#">Сливочное мороженое</a>
-        </li>
-      </ul>
-    </section>
-    <!-- Фильтр каталога -->
-    <section class="catalog-filter">
-      <h2 class="catalog-filter-title">Сливочное мороженое</h2>
-      <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="catalog-filter-form-group">
-          <label class="catalog-filter-form-group-title">Сортировка:</label>
-          <select class="sorting-item" name="sorting-items" >
-            <option value="1">По популярности</option>
-            <option value="2">По цене</option>
-            <option value="3">По жирности</option>
-          </select>
-        </div>
-        <div class="catalog-filter-form-group">
-          <label class="catalog-filter-form-group-title">Цена: 100 &#8381; - 500 &#8381;</label>
-          <input class="visually-hidden" type="range" min="100" max="500" step="10" value="250">
-          <div class="range-block">
-            <div class="range-block-band">
-              <div class="range-block-band-meaning">
-                <button class="range-toggle range-toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
-                <button class="range-toggle range-toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
+    <main class="main-index">
+      <!-- Навигация по каталогу -->
+      <section class="catalog-navigation">
+        <h2 class="visually-hidden">Навигация по каталогу</h2>
+        <ul class="catalog-navigation-list decoration-list">
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-item-link decoration-link" href="index.html">Главная</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-item-link decoration-link" href="#">Каталог</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-item-link decoration-link" href="#">Сливочное мороженое</a>
+          </li>
+        </ul>
+      </section>
+      <!-- Фильтр каталога -->
+      <section class="catalog-filter">
+        <h2 class="catalog-filter-title">Сливочное мороженое</h2>
+        <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="catalog-filter-form-group">
+            <label class="catalog-filter-form-group-title">Сортировка:</label>
+            <select class="sorting-item" name="sorting-items" >
+              <option value="1">По популярности</option>
+              <option value="2">По цене</option>
+              <option value="3">По жирности</option>
+            </select>
+          </div>
+          <div class="catalog-filter-form-group">
+            <label class="catalog-filter-form-group-title">Цена: 100 &#8381; - 500 &#8381;</label>
+            <input class="visually-hidden" type="range" min="100" max="500" step="10" value="250">
+            <div class="range-block">
+              <div class="range-block-band">
+                <div class="range-block-band-meaning">
+                  <button class="range-toggle range-toggle-min" type="button"><span class="visually-hidden">Изменить минимальную цену.</span></button>
+                  <button class="range-toggle range-toggle-max" type="button"><span class="visually-hidden">Изменить максимальную цену.</span></button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="catalog-filter-form-group">
-          <span class="catalog-filter-form-group-title">Жирность</span>
-          <div class="fat-group">
-            <input type="radio" name="question-fat-content" value="0" id="radio-1">
-            <label for="radio-1">
-              0%
-            </label>
-            <input type="radio" name="question-fat-content" value="10" id="radio-2" checked>
-            <label for="radio-2">
-              до 10%
-            </label>
-            <input type="radio" name="question-fat-content" value="10-30" id="radio-3">
-            <label for="radio-3">
-              до 30%
-            </label>
-            <input type="radio" name="question-fat-content" value="30-100" id="radio-4">
-            <label for="radio-4">
-              выше 30%
-            </label>
+          <div class="catalog-filter-form-group">
+            <span class="catalog-filter-form-group-title">Жирность</span>
+            <div class="fat-group">
+              <input type="radio" name="question-fat-content" value="0" id="radio-1">
+              <label for="radio-1">
+                0%
+              </label>
+              <input type="radio" name="question-fat-content" value="10" id="radio-2" checked>
+              <label for="radio-2">
+                до 10%
+              </label>
+              <input type="radio" name="question-fat-content" value="10-30" id="radio-3">
+              <label for="radio-3">
+                до 30%
+              </label>
+              <input type="radio" name="question-fat-content" value="30-100" id="radio-4">
+              <label for="radio-4">
+                выше 30%
+              </label>
+            </div>
+            </div>
+          <div class="catalog-filter-form-group catalog-filter-form-group-filles">
+            <span class="catalog-filter-form-group-title">Наполнители</span>
+            <div class="filles-group">
+              <input type="checkbox" name="filles-chocolate" id="checkbox-1" checked>
+              <label for="checkbox-1">шоколадные</label>
+              <input type="checkbox" name="filles-sugar" id="checkbox-2" checked>
+              <label for="checkbox-2">сахарные посыпки</label>
+              <input type="checkbox" name="filles-fruit" id="checkbox-3">
+              <label for="checkbox-3">фрукты</label>
+              <input type="checkbox" name="filles-syrups" id="checkbox-4">
+              <label for="checkbox-4">сиропы</label>
+              <input type="checkbox" name="filles-jams" id="checkbox-5">
+              <label for="checkbox-5">джемы</label>
+            </div>
           </div>
-          </div>
-        <div class="catalog-filter-form-group catalog-filter-form-group-filles">
-          <span class="catalog-filter-form-group-title">Наполнители</span>
-          <div class="filles-group">
-            <input type="checkbox" name="filles-chocolate" id="checkbox-1" checked>
-            <label for="checkbox-1">шоколадные</label>
-            <input type="checkbox" name="filles-sugar" id="checkbox-2" checked>
-            <label for="checkbox-2">сахарные посыпки</label>
-            <input type="checkbox" name="filles-fruit" id="checkbox-3">
-            <label for="checkbox-3">фрукты</label>
-            <input type="checkbox" name="filles-syrups" id="checkbox-4">
-            <label for="checkbox-4">сиропы</label>
-            <input type="checkbox" name="filles-jams" id="checkbox-5">
-            <label for="checkbox-5">джемы</label>
-          </div>
-        </div>
-        <button class="filter-button" type="submit">Применить</button>
-      </form>
-    </section>
-    <!-- Блок списка с мороженым-->
-    <section class="offer-cards">
-      <ul class="ice-cream-list decoration-list">
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/raspberry.png" height="168" width="168" alt="Малинка.">
-          <h3 class="offer-title">Малинка</h3>
-          <p class="offer-description">Сливочное мороженое с малиновым джемом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/pistachio.png" height="168" width="168" alt="Фисташка.">
-          <h3 class="offer-title">Фисташка</h3>
-          <p class="offer-description">Фисташковый пломбир с кусочками шоколада</p>
-          <div class="offer-footer">
-            <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/blueberry.png" height="168" width="168" alt="Черника.">
-          <h3 class="offer-title">Черника</h3>
-          <p class="offer-description">Крем-брюле <br> с черничным джемом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/bubble-gum.png" height="168" width="168" alt="Бабл-гам.">
-          <h3 class="offer-title">Бабл-гам</h3>
-          <p class="offer-description">Ванильный пломбир <br> со сладкой посыпкой</p>
-          <div class="offer-footer">
-            <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/blackberry.png" height="168" width="168" alt="Малинка.">
-          <h3 class="offer-title">Ежевика</h3>
-          <p class="offer-description">Сливочное мороженое с ежевичным джемом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/banana.png" height="168" width="168" alt="Фисташка.">
-          <h3 class="offer-title">Банан</h3>
-          <p class="offer-description">Сливочный пломбир <br> с банановым вкусом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/chocolate.png" height="168" width="168" alt="Черника.">
-          <h3 class="offer-title">Шоколадка</h3>
-          <p class="offer-description">Классический шоколадный пломбир</p>
-          <div class="offer-footer">
-            <strong class="offer-price">270 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/strawberry.png" height="168" width="168" alt="Бабл-гам.">
-          <h3 class="offer-title">Клубничка</h3>
-          <p class="offer-description">Сливочный пломбир <br> с клубничным вкусом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">300 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/lemon.png" height="168" width="168" alt="Малинка.">
-          <h3 class="offer-title">Лимон</h3>
-          <p class="offer-description">Освежающий лимонный сорбет</p>
-          <div class="offer-footer">
-            <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/menthol.png" height="168" width="168" alt="Фисташка.">
-          <h3 class="offer-title">Ментол</h3>
-          <p class="offer-description">Сливочный пломбир <br> с ментоловым сиропом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/nut.png" height="168" width="168" alt="Черника.">
-          <h3 class="offer-title">Орешек</h3>
-          <p class="offer-description">Фисташковый пломбир с шоколадным сиропом</p>
-          <div class="offer-footer">
-            <strong class="offer-price">360 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-        <li class="offer-item">
-          <img class="offer-img" src="./images/catalog/сreme-brulee.png" height="168" width="168" alt="Бабл-гам.">
-          <h3 class="offer-title">Крем-брюле</h3>
-          <p class="offer-description">Классическое <br> крем-брюле</p>
-          <div class="offer-footer">
-            <strong class="offer-price">280 &#8381;/кг</strong>
-            <a class="offer-button-buy decoration-link" href="#">
-              <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
-            </a>
-          </div>
-        </li>
-      </ul>
-      <div class="catalog-pagination">
-        <button class="pagination-button" type="button">Показать еще</button>
-        <ul class="pagination decoration-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev decoration-link">
-              ❮
-              <span class="visually-hidden">Предыдущая страница.</span>
-            </a>
+          <button class="filter-button" type="submit">Применить</button>
+        </form>
+      </section>
+      <!-- Блок списка с мороженым-->
+      <section class="offer-cards">
+        <ul class="ice-cream-list decoration-list">
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/raspberry.png" height="168" width="168" alt="Малинка.">
+            <h3 class="offer-title">Малинка</h3>
+            <p class="offer-description">Сливочное мороженое с малиновым джемом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">310 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item pagination-current">
-            <a class="pagination-link decoration-link" href="#">1</a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/pistachio.png" height="168" width="168" alt="Фисташка.">
+            <h3 class="offer-title">Фисташка</h3>
+            <p class="offer-description">Фисташковый пломбир с кусочками шоколада</p>
+            <div class="offer-footer">
+              <strong class="offer-price">340 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link decoration-link" href="#">2</a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/blueberry.png" height="168" width="168" alt="Черника.">
+            <h3 class="offer-title">Черника</h3>
+            <p class="offer-description">Крем-брюле <br> с черничным джемом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">330 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link decoration-link" href="#">3</a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/bubble-gum.png" height="168" width="168" alt="Бабл-гам.">
+            <h3 class="offer-title">Бабл-гам</h3>
+            <p class="offer-description">Ванильный пломбир <br> со сладкой посыпкой</p>
+            <div class="offer-footer">
+              <strong class="offer-price">320 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link decoration-link" href="#">4</a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/blackberry.png" height="168" width="168" alt="Малинка.">
+            <h3 class="offer-title">Ежевика</h3>
+            <p class="offer-description">Сливочное мороженое с ежевичным джемом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">330 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link decoration-link" href="#">5</a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/banana.png" height="168" width="168" alt="Фисташка.">
+            <h3 class="offer-title">Банан</h3>
+            <p class="offer-description">Сливочный пломбир <br> с банановым вкусом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">340 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next decoration-link" href="#">
-              ❯
-              <span class="visually-hidden">Следующая страница.</span>
-            </a>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/chocolate.png" height="168" width="168" alt="Черника.">
+            <h3 class="offer-title">Шоколадка</h3>
+            <p class="offer-description">Классический шоколадный пломбир</p>
+            <div class="offer-footer">
+              <strong class="offer-price">270 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
+          </li>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/strawberry.png" height="168" width="168" alt="Бабл-гам.">
+            <h3 class="offer-title">Клубничка</h3>
+            <p class="offer-description">Сливочный пломбир <br> с клубничным вкусом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">300 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
+          </li>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/lemon.png" height="168" width="168" alt="Малинка.">
+            <h3 class="offer-title">Лимон</h3>
+            <p class="offer-description">Освежающий лимонный сорбет</p>
+            <div class="offer-footer">
+              <strong class="offer-price">310 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
+          </li>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/menthol.png" height="168" width="168" alt="Фисташка.">
+            <h3 class="offer-title">Ментол</h3>
+            <p class="offer-description">Сливочный пломбир <br> с ментоловым сиропом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">320 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
+          </li>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/nut.png" height="168" width="168" alt="Черника.">
+            <h3 class="offer-title">Орешек</h3>
+            <p class="offer-description">Фисташковый пломбир с шоколадным сиропом</p>
+            <div class="offer-footer">
+              <strong class="offer-price">360 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
+          </li>
+          <li class="offer-item">
+            <img class="offer-img" src="./images/catalog/сreme-brulee.png" height="168" width="168" alt="Бабл-гам.">
+            <h3 class="offer-title">Крем-брюле</h3>
+            <p class="offer-description">Классическое <br> крем-брюле</p>
+            <div class="offer-footer">
+              <strong class="offer-price">280 &#8381;/кг</strong>
+              <a class="offer-button-buy decoration-link" href="#">
+                <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
+              </a>
+            </div>
           </li>
         </ul>
-      </div>
-    </section>
+        <div class="catalog-pagination">
+          <button class="pagination-button" type="button">Показать еще</button>
+          <ul class="pagination decoration-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev decoration-link">
+                ❮
+                <span class="visually-hidden">Предыдущая страница.</span>
+              </a>
+            </li>
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link decoration-link" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link decoration-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link decoration-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link decoration-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link decoration-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next decoration-link" href="#">
+                ❯
+                <span class="visually-hidden">Следующая страница.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
      <!-- Подвал с контактами, дополнительными ссылками и копирайтом-->
      <footer class="main-footer">
       <nav class="social-navigation">
