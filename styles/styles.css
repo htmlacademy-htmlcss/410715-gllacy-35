@@ -511,6 +511,7 @@ a {
   font-weight: 700;
   width: 139px;
   outline: 4px solid rgba(252, 252, 252, 0.3);
+  box-sizing: border-box;
 }
 
 .slider-button-buy:hover {
@@ -620,8 +621,10 @@ a {
 
 .gift-card-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 55px 0 0 0;
+  flex-wrap: wrap;
+  gap: 20px 30px;
 }
 
 .gift-title {
@@ -698,7 +701,9 @@ a {
   margin: 107px 0 0 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 70px 30px;
 }
 
 .offer-item {
@@ -808,7 +813,9 @@ a {
 .other {
   margin: 80px 0 0 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 30px;
 }
 
 .other-list {

@@ -83,11 +83,11 @@
     <main class="main-index">
       <!-- Блок с слайдером мороженного-->
       <section class="slider">
-        <button class="slider-button slider-button-prev">
+        <button class="slider-button slider-button-prev" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
           <span class="visually-hidden">Предыдущий слайд.</span>
         </button>
-        <button class="slider-button slider-button-next">
+        <button class="slider-button slider-button-next" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z" clip-rule="evenodd"/></svg>
           <span class="visually-hidden">Следующий слайд.</span>
         </button>
@@ -98,7 +98,7 @@
               <div class="slide-text">
                 <h2 class="slider-title">Нежный пломбир <br> с клубничным джемом</h2>
                 <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом – <br> это идеальный десерт для всей семьи.</p>
-                <button class="slider-button-buy" type="button">Заказать</button>
+                <a class="slider-button-buy" href="catalog.html">Заказать</a>
               </div>
               <div class="slider-image-substrate">
                 <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
@@ -109,7 +109,7 @@
               <div class="slide-text visually-hidden">
                 <h2 class="slider-title">Сливочное мороженое со вкусом банана</h2>
                 <p class="slider-description">Сливочное мороженое с ярким банановым <br> вкусом подарит вам свежесть и наслаждение <br> даже в самый жаркий летний день.</p>
-                <button class="slider-button-buy" type="button">Заказать</button>
+                <a class="slider-button-buy" href="catalog.html">Заказать</a>
               </div>
               <div class="slider-image-substrate">
                 <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
@@ -120,7 +120,7 @@
               <div class="slide-text visually-hidden">
                 <h2 class="slider-title">Карамельный пломбир <br> с маршмеллоу</h2>
                 <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет <br> сердца сладкоежек всех возрастов.</p>
-                <button class="slider-button-buy" type="button">Заказать</button>
+                <a class="slider-button-buy" href="catalog.html">Заказать</a>
               </div>
               <div class="slider-image-substrate">
                 <div class="substrate"><span class="visually-hidden">Подложка.</span></div>
@@ -306,7 +306,7 @@
           <p class="info-description-number">Для заказов по телефону:</p>
           <b class="info-number">+7 (812) 812-12-12</b>
           <p class="info-description-time">(с 10 до 20 ежедневно)</p>
-          <a class="info-description-button">Форма обратной связи</a>
+          <a class="info-description-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -356,7 +356,7 @@
         <button class="modal-button-close" type="button"><span class="visually-hidden">Закрыть модальное окно.</span></button>
         <h2 class="modal-form-title"> Мы обязательно ответим вам!</h2>
         <input type="text" name="modal-form-name" placeholder="Имя и фамилия">
-        <input type="text" name="modal-form-email" placeholder="Имя и фамилия">
+        <input type="email" name="modal-form-email" placeholder="email@example.com">
         <textarea class="modal-form-area" name="modal-form-area" placeholder="В свободной форме" rows="8"></textarea>
         <button class="modal-button-send" type="submit">Отправить</button>
       </form>
