@@ -548,34 +548,39 @@ a {
 
 .slider-button-buy {
   background: #FCFCFC;
-  border: 4px solid rgba(252, 252, 252, 0.4);
-  font-family: "Inter" , sans-serif;
   font-size: 16px;
-  padding: 8px 28px;
+  padding: 12px 32px;
   border-radius: 26px;
+  width: 139px;
   line-height: 20px;
   font-weight: 700;
-  width: 139px;
   outline: 4px solid rgba(252, 252, 252, 0.3);
   box-sizing: border-box;
 }
 
-.slider-button-buy:hover {
+.slider-button-buy:hover,
+.button-gift:hover,
+.pagination-button:hover {
   background: rgba(252, 252, 252, 0.4);
+  outline-color: #FCFCFC;
 }
 
-.slider-button-buy:active {
-  border-color: #2D3440;
+.slider-button-buy:active,
+.button-gift:active,
+.pagination-button:active {
+  outline-color: #2D3440;
 }
 
-.slider-button-buy:focus {
+.slider-button-buy:focus,
+.button-gift:focus,
+.pagination-button:focus {
   background: rgba(252, 252, 252, 0.4);
-  border-color: #2D3440;
+  outline-color: #2D3440;
 }
 
 .disable {
   background: #E7E7E7;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline-color: 4px solid rgba(252, 252, 252, 0.4);
   color: #B9B9B9;
 }
 
@@ -930,7 +935,7 @@ a {
 .subscription-form-input {
   padding: 14px 16px;
   width: 100%;
-  margin: 0 22px 0 0;
+  margin: 0 13px 0 0;
   border: 1px solid #B9B9B9;
   box-sizing: border-box;
   line-height: 20px;
@@ -938,15 +943,36 @@ a {
 
 .subscription-form-button {
   background: #FF2F64;
-  border: 4px solid rgba(255, 47, 100, 0.3);
+  border: none;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
   color: #FCFCFC;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
-  padding: 12px 32px;
+  padding: 12px 38px;
   margin: auto 0;
+}
+
+.subscription-form-button:hover,
+.appointment-button:hover,
+.info-description-button:hover {
+  outline-color: #FF2F64;
+  background-color: #FCFCFC;
+  color: #2D3440;
+}
+
+.subscription-form-button:active,
+.appointment-button:active,
+.info-description-button:active {
+  background-color: #FEAFC3;
+  outline-color: #2D3440;
+}
+
+.subscription-form-button:focus,
+.appointment-button:focus,
+.info-description-button:focus {
+  outline-color: #2D3440;
 }
 
 .visually-hidden {
@@ -985,7 +1011,7 @@ a {
   background: #FCFCFC;
   border-radius: 8px;
   width: 500px;
-  padding: 40px;
+  padding: 40px 40px 42px 40px;
   box-sizing: border-box;
 }
 
@@ -1006,15 +1032,15 @@ a {
 
 .appointment-button {
   background: #FF2F64;
-  border: 4px solid rgba(255, 47, 100, 0.3);
+  border: none;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
   grid-column: 1 / -1;
-  margin: 14px auto 0;
+  margin: 12px auto 0;
   color: #FCFCFC;
   line-height: 20px;
   font-weight: 700;
-  padding: 8px 28px;
+  padding: 12px 32px;
   font-size: 16px;
 }
 
@@ -1150,13 +1176,12 @@ a {
 
 .info-description-button {
   margin: 35px 0 0 0;
-  padding: 6px 28px;
+  padding: 10px 32px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FCFCFC;
   background: #FF2F64;
-  border: 4px solid rgba(255, 47, 100, 0.3);
   outline: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
 }
@@ -1447,15 +1472,29 @@ a {
 }
 
 .filter-button {
-  padding: 7px 54px;
+  padding: 8px 54px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
-  border: 2px solid #FCFCFC;
+  border: none;
+  outline: 2px solid #FCFCFC;
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   margin-top: auto;
+}
+
+.filter-button:hover {
+  background-color: #FCFCFC;
+  outline-color: #FCFCFC;
+}
+
+.filter-button:active {
+  outline-color: rgba(252, 252, 252, 0.3);
+}
+
+.filter-button:focus {
+  outline-color: #2D3440;
 }
 
 /* Пагинация каталока */
@@ -1482,11 +1521,11 @@ a {
   background: #FCFCFC;
   display: inline-block;
   margin: 0 335px 0 0;
-  padding: 8px 28px;
+  padding: 12px 32px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  border: none;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
   font-family: "Inter" , sans-serif;
