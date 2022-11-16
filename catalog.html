@@ -4,47 +4,47 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=".images/lofo/favicon.png">
   </head>
   <body>
-    <div class="container">
+    <div class="main">
       <h1 class="visually-hidden">Каталог магазина мороженого Глейси.</h1>
     <!-- Шапка сайта: логотип, меню, контакты, поиск, логин и корзина-->
     <header class="main-header">
       <nav class="navigation">
-        <a href="index.html">
+        <a class="decoration-link" href="index.html">
           <img src="./images/logos/logo.svg" alt="Логотип Gllacy Shop." height="56" width="137">
         </a>
         <div class="drop-menu">
-          <a class="button-catalog" href="catalog.html">Каталог</a>
-          <ul class="navigation-catalog">
+          <a class="button-catalog decoration-link" href="catalog.html">Каталог</a>
+          <ul class="navigation-catalog decoration-list">
             <li class="navigation-catalog-item catalog-decoration">
               <b class="catalog-title">Новинки</b>
             </li>
             <li class="navigation-catalog-item">
-              <a class="drop-menu-item" href="catalog.html">Сливочное</a>
+              <a class="drop-menu-item decoration-link" href="catalog.html">Сливочное</a>
             </li>
             <li class="navigation-catalog-item">
-              <a class="drop-menu-item" href="catalog.html">Щербет</a>
+              <a class="drop-menu-item decoration-link" href="catalog.html">Щербет</a>
             </li>
             <li class="navigation-catalog-item">
-              <a class="drop-menu-item" href="catalog.html">Фруктовый лед</a>
+              <a class="drop-menu-item decoration-link" href="catalog.html">Фруктовый лед</a>
             </li>
             <li class="navigation-catalog-item">
-              <a class="drop-menu-item" href="catalog.html">Мелорин</a>
+              <a class="drop-menu-item decoration-link" href="catalog.html">Мелорин</a>
             </li>
           </ul>
         </div>
-        <a class="navigation-catalog-item-link catalog-reserv" href="#">Доставка и оплата</a>
-        <a class="navigation-catalog-item-link catalog-reserv" href="#">О компании</a>
+        <a class="navigation-catalog-item-link catalog-reserv decoration-link" href="#">Доставка и оплата</a>
+        <a class="navigation-catalog-item-link catalog-reserv decoration-link" href="#">О компании</a>
       </nav>
       <nav class="navigation-second">
-        <ul class="navigation-list">
+        <ul class="navigation-list decoration-list">
           <li class="navigation-item button-number">
-            <a href="tel:88005558628">+7 800 555-86-28</a>
+            <a class="decoration-link" href="tel:88005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item button-search">
-            <a href="catalog.html" class="search-link">
+            <a href="catalog.html" class="search-link decoration-link">
               <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/></svg>
             </a>
             <form action="https://echo.htmlacademy.ru/" class="search-form drop-box" method="post">
@@ -52,7 +52,7 @@
             </form>
           </li>
           <li class="navigation-item button-input">
-            <a class="button-link-icon-position" href="#">
+            <a class="button-link-icon-position decoration-link" href="#">
               <svg width="14" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/></svg>
               Вход
             </a>
@@ -62,24 +62,24 @@
               <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
               <div class="input-form-footer">
                 <input type="submit" value="Войти">
-                <ul class="input-form-list">
-                  <li class="input-fotm-item"><a href="#">Забыли пароль?</a></li>
-                  <li class="input-fotm-item"><a href="#">Регистрация</a></li>
+                <ul class="input-form-list decoration-list">
+                  <li class="input-fotm-item"><a class="decoration-link" href="#">Забыли пароль?</a></li>
+                  <li class="input-fotm-item"><a class="decoration-link" href="#">Регистрация</a></li>
                 </ul>
               </div>
             </form>
           </li>
           <li class="navigation-item button-backet">
-            <a class="button-link-icon-position" href="#">
+            <a class="button-link-icon-position decoration-link" href="#">
               <svg width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.17.1a.67.67 0 1 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.65a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/></svg>
               2 товара
             </a>
             <div class="backet-box drop-box">
               <div class="backet-box-content">
                 <h2 class="backet-box-content-title">Корзина</h2>
-                <ol class="backet-box-content-list">
+                <ol class="backet-box-content-list decoration-list">
                   <li class="backet-box-content-list-item">
-                    <a href="#">
+                    <a class="decoration-link" href="#">
                       <img src="./images/catalog/raspberry.png" alt="Поиск по сайту." height="46" width="46">
                     </a>
                     <div class="backet-box-content-description">
@@ -92,7 +92,7 @@
                     </button>
                   </li>
                   <li class="backet-box-content-list-item">
-                    <a href="#">
+                    <a class="decoration-link" href="#">
                       <img src="./images/catalog/bubble-gum.png" alt="Поиск по сайту." height="46" width="46">
                     </a>
                     <div class="backet-box-content-description">
@@ -118,15 +118,15 @@
     <!-- Навигация по каталогу -->
     <section class="catalog-navigation">
       <h2 class="visually-hidden">Навигация по каталогу</h2>
-      <ul class="catalog-navigation-list">
+      <ul class="catalog-navigation-list decoration-list">
         <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link" href="index.html">Главная</a>
+          <a class="catalog-navigation-item-link decoration-link" href="index.html">Главная</a>
         </li>
         <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link" href="#">Каталог</a>
+          <a class="catalog-navigation-item-link decoration-link" href="#">Каталог</a>
         </li>
         <li class="catalog-navigation-item">
-          <a class="catalog-navigation-item-link" href="#">Сливочное мороженое</a>
+          <a class="catalog-navigation-item-link decoration-link" href="#">Сливочное мороженое</a>
         </li>
       </ul>
     </section>
@@ -195,14 +195,14 @@
     </section>
     <!-- Блок списка с мороженым-->
     <section class="offer-cards">
-      <ul class="ice-cream-list">
+      <ul class="ice-cream-list decoration-list">
         <li class="offer-item">
           <img class="offer-img" src="./images/catalog/raspberry.png" height="168" width="168" alt="Малинка.">
           <h3 class="offer-title">Малинка</h3>
           <p class="offer-description">Сливочное мороженое с малиновым джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -213,7 +213,7 @@
           <p class="offer-description">Фисташковый пломбир с кусочками шоколада</p>
           <div class="offer-footer">
             <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -224,7 +224,7 @@
           <p class="offer-description">Крем-брюле <br> с черничным джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -235,7 +235,7 @@
           <p class="offer-description">Ванильный пломбир <br> со сладкой посыпкой</p>
           <div class="offer-footer">
             <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -246,7 +246,7 @@
           <p class="offer-description">Сливочное мороженое с ежевичным джемом</p>
           <div class="offer-footer">
             <strong class="offer-price">330 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -257,7 +257,7 @@
           <p class="offer-description">Сливочный пломбир <br> с банановым вкусом</p>
           <div class="offer-footer">
             <strong class="offer-price">340 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -268,7 +268,7 @@
           <p class="offer-description">Классический шоколадный пломбир</p>
           <div class="offer-footer">
             <strong class="offer-price">270 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -279,7 +279,7 @@
           <p class="offer-description">Сливочный пломбир <br> с клубничным вкусом</p>
           <div class="offer-footer">
             <strong class="offer-price">300 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -290,7 +290,7 @@
           <p class="offer-description">Освежающий лимонный сорбет</p>
           <div class="offer-footer">
             <strong class="offer-price">310 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -301,7 +301,7 @@
           <p class="offer-description">Сливочный пломбир <br> с ментоловым сиропом</p>
           <div class="offer-footer">
             <strong class="offer-price">320 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -312,7 +312,7 @@
           <p class="offer-description">Фисташковый пломбир с шоколадным сиропом</p>
           <div class="offer-footer">
             <strong class="offer-price">360 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -323,7 +323,7 @@
           <p class="offer-description">Классическое <br> крем-брюле</p>
           <div class="offer-footer">
             <strong class="offer-price">280 &#8381;/кг</strong>
-            <a class="offer-button-buy" href="#">
+            <a class="offer-button-buy decoration-link" href="#">
               <img src="./images/other/offer-basket.svg" alt="Добавить в корзину." height="16" width="16">
             </a>
           </div>
@@ -331,30 +331,30 @@
       </ul>
       <div class="catalog-pagination">
         <button class="pagination-button" type="button">Показать еще</button>
-        <ul class="pagination">
+        <ul class="pagination decoration-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev">
+            <a class="pagination-link pagination-prev decoration-link">
               ❮
               <span class="visually-hidden">Предыдущая страница.</span>
             </a>
           </li>
           <li class="pagination-item pagination-current">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link decoration-link" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link decoration-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link decoration-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link decoration-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
+            <a class="pagination-link decoration-link" href="#">5</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
+            <a class="pagination-link pagination-next decoration-link" href="#">
               ❯
               <span class="visually-hidden">Следующая страница.</span>
             </a>
@@ -365,29 +365,29 @@
      <!-- Подвал с контактами, дополнительными ссылками и копирайтом-->
      <footer class="main-footer">
       <nav class="social-navigation">
-        <ul class="social-navigation-list">
+        <ul class="social-navigation-list decoration-list">
           <li class="social-navigation-item">
-            <a href="https://t.me/htmlacademy" target="_blank">
+            <a class="decoration-link" href="https://t.me/htmlacademy" target="_blank">
               <img src="./images/social/telegram.svg" alt="Телеграмм." height="24" width="24">
             </a>
           </li>
           <li class="social-navigation-item">
-            <a href="https://vk.com/htmlacademy" target="_blank">
+            <a class="decoration-link" href="https://vk.com/htmlacademy" target="_blank">
               <img src="./images/social/vk.svg" alt="Вконтакте." height="24" width="24">
             </a>
           </li>
           <li class="social-navigation-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="decoration-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <img src="./images/social/youtube.svg" alt="Ютуб." height="24" width="24">
             </a>
           </li>
         </ul>
       </nav>
       <nav class="footer-menu">
-        <ul class="footer-menu-list">
+        <ul class="footer-menu-list decoration-list">
           <li class="footer-menu-item">
-            <img class="heart" src="./images/other/heart.svg" alt="Сердечко.">
-            <a class="footer-menu-item-link" href="#">Для поставщиков</a>
+            <img class="heart" src="./images/other/heart.svg" alt="Сердечко." height="13" width="13">
+            <a class="footer-menu-item-link decoration-link" href="#">Для поставщиков</a>
           </li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">Наши документы</a></li>
           <li class="footer-menu-item"><a class="footer-menu-item-link" href="#">О производстве</a></li>
@@ -396,7 +396,7 @@
       </nav>
       <section class="copyright">
         <h2 class="visually-hidden">Правообладатель копирайта.</h2>
-        <a class="copyright-link" href="https://htmlacademy.ru/" target="_blank">
+        <a class="copyright-link decoration-link" href="https://htmlacademy.ru/" target="_blank">
           <img class="copyright-logo" src="./images/logos/logo-htmlacademy.svg" alt="HTML Academy." height="27" width="93">
           <p class="copyright-description">Сделано в .html academy © 2021</p>
         </a>
