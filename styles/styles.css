@@ -168,13 +168,18 @@ a {
   border-radius: 27px;
   height: 32px;
   width: 32px;
-  padding: 8px;
   box-sizing: border-box;
   position: relative;
 }
 
+.search-link {
+  padding: 8px;
+}
+
 .button-search:hover .search-form,
-.button-search:focus-within .search-form  {
+.button-search:focus-within .search-form,
+.button-search:focus .search-form,
+.button-search:active .search-form {
   display: block;
 }
 
@@ -220,7 +225,6 @@ a {
 }
 
 .button-input, .button-backet {
-  padding: 6px 17px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   font-size: 14px;
@@ -238,13 +242,14 @@ a {
   position: absolute;
   background: #FCFCFC;
   border-radius: 4px;
-  top: 40px;
+  top: 42px;
   right: 0;
   box-sizing: border-box;
   padding: 48px 0;
   min-width: 288px;
   max-width: 441px;
   z-index: 2;
+  color: #2D3440;
 }
 
 .backet-box-title {
@@ -343,18 +348,22 @@ a {
 }
 
 .button-backet:hover .backet-box,
-.button-backet:focus-within .backet-box {
+.button-backet:focus-within .backet-box,
+.button-backet:focus .backet-box,
+.button-backet:active .backet-box {
   display: block;
 }
 
 .button-input:hover .input-form,
-.button-input:focus-within .input-form {
+.button-input:focus-within .input-form,
+.button-input:focus .input-form,
+.button-input:active .input-form {
   display: flex;
 }
 
 .input-form {
   position: absolute;
-  top: 40px;
+  top: 42px;
   right: 0;
   display: none;
   flex-direction: column;
@@ -407,6 +416,7 @@ a {
   line-height: 20px;
   padding: 0;
   margin: 0 0 0 23px;
+  color: #2D3440;
 }
 
 .input-form-list li {
@@ -418,6 +428,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 8px 17px;
 }
 
 .button-link-icon-position :first-child {
@@ -431,6 +442,41 @@ a {
   padding: 8px 16px;
   display: block;
   border-radius: 30px;
+}
+
+.button-active .drop-box {
+  display: block;
+}
+
+.button-active {
+  background: #FF4A78;
+  color: #FCFCFC;
+}
+
+.button-active svg path {
+  fill: #FCFCFC;
+}
+
+.button-active:hover {
+  background: #FF4A78;
+}
+
+.button-active:hover a {
+  opacity: 0.6;
+}
+
+.button-active:active {
+  background: #FF4A78;
+  outline: 2px solid #000000;
+  opacity: 1;
+}
+
+.button-active:focus {
+  background: #FF4A78;
+}
+
+.button-active:focus a {
+  opacity: 0.3;
 }
 
 /* Блок с слайдерами */
@@ -455,13 +501,13 @@ a {
 
 .slider-button-prev {
   position: absolute;
-  top: 238px;
+  top: 235px;
   left: 541px;
 }
 
 .slider-button-next {
   position: absolute;
-  top: 238px;
+  top: 235px;
   right: 279px;
   transform: rotate(180deg);
 }
@@ -578,9 +624,8 @@ a {
 .current .substrate {
   width: 312px;
   height: 312px;
-  top: 51%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 99px;
+  left: 3px;
   opacity: 1;
   margin: 0 0 0 14px;
 }
@@ -1415,12 +1460,18 @@ a {
 
 /* Пагинация каталока */
 
+.pagination {
+  display: flex;
+  align-items: center;
+  margin: 13px 0 0 0;
+}
+
 .catalog-pagination {
   position: relative;
   display: flex;
   justify-content: end;
   margin: 57px 0 0 0;
-  padding: 0 0 88px 0;
+  padding: 0 0 87px 0;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
@@ -1441,12 +1492,6 @@ a {
   font-family: "Inter" , sans-serif;
 }
 
-.pagination {
-  display: flex;
-  align-items: center;
-  margin: 13px 0 0 0;
-}
-
 .pagination-item {
   height: 24px;
   width: 24px;
@@ -1455,6 +1500,14 @@ a {
 
 .pagination-current {
   background: #FCFCFC;
+}
+
+.pagination-prev {
+  margin: 0 10px 0 0;
+}
+
+.pagination-next {
+  margin: 0 0 0 10px;
 }
 
 /* Модальное окно*/
